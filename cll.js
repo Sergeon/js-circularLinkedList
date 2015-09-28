@@ -143,9 +143,9 @@ var CLL = (function (){
 
 
         /**
-        *finds a node in the list by a simple key -> value check.
-        *TODO im not sure this is suitable. if a object has a lot of key -> value pairs,
-        *this would return true if just one of them match
+        *finds a node in the list that equals to the target parameter. 
+        * by 'equals', we intent that objects point to the same object
+        * or share all its properties. 
         */
 		var find = function( target ){
 
