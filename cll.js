@@ -45,6 +45,9 @@ var CLL = (function (){
     */
 	var createFromArray = function( collection ){
 
+		if(! Array.isArray(collection))
+				throw new Error('collection parameter should be an array.');
+
 		var current = null;
 		var initialElement = null;
 
@@ -177,6 +180,8 @@ var CLL = (function (){
 
 			if(this.get() === target )
 				return this;
+			else if( this.next == null )
+				return null;
 
 			var current = this;
 			while (current = current.next() ){
@@ -189,7 +194,7 @@ var CLL = (function (){
 			}
 
 
-
+			return null;
 		}
 
 		/**

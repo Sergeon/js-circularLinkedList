@@ -2,9 +2,9 @@
 a javascript circular linked list implementation.
 
 
-cll.js is an implementation of a circular linked list, where there are no initial or end nodes, but all nodes are currently linked with some previous and next node. 
+cll.js is an implementation of a circular linked list, where there are no initial or end nodes, but all nodes are currently linked with some previous and next node.
 
-usage: 
+#usage:
 
 ```js
 
@@ -39,8 +39,11 @@ console.log(first.findObject(vegeta).get().name ); //vegeta. The vegeta var does
 var fruits = [{'name' : 'banana' , 'color' : 'yellow'} , {'name' : 'apple' , 'color' : 'red'} , {'name' : 'avocado' , 'color' : 'green'}  ]
 
 //createFromArray always returns a node containing the first object in the array:
-var fruitNode = CLL.createFromArray(fruits);	
+var fruitNode = CLL.createFromArray(fruits);
 
 console.log(fruitNode.next().next().get().name ); //did you know avocados are actually fruits, and not vegetables? :-D
 
 ```
+#test
+
+`npm test`
