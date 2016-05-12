@@ -1,0 +1,30 @@
+{
+  "name": "js-cll",
+  "version": "1.0.0",
+  "description": "A simple circular linked list implementation",
+  "main": "cll.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergeon/js-circularLinkedList.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "linkedList",
+    "mocha",
+    "chai"
+  ],
+  "author": "https://github.com/Sergeon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sergeon/js-circularLinkedList/issues"
+  },
+  "homepage": "https://github.com/Sergeon/js-circularLinkedList#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}

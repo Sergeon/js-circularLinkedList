@@ -15,15 +15,23 @@
 * passing the object stored as parameter.
 *
 *prev, next, create, createFromArray, find and findObject functions
-*are chainable. 
+*are chainable.
 *
 */
+
+module = module || {};
+
+
+
 var CLL = (function (){
 
 	var create = function( firstNode ){
 
-		var init = Node(firstNode  );
 
+		if (Array.isArray(firstNode))
+			return createFromArray(firstNode);
+
+		var init = Node(firstNode  );
 		return init;
 	};
 
@@ -143,9 +151,9 @@ var CLL = (function (){
 
 
         /**
-        *finds a node in the list that equals to the target parameter. 
+        *finds a node in the list that equals to the target parameter.
         * by 'equals', we intent that objects point to the same object
-        * or share all its properties. 
+        * or share all its properties.
         */
 		var find = function( target ){
 
@@ -361,3 +369,5 @@ var CLL = (function (){
 
 
 })();//end CLL
+
+module.exports = CLL;
